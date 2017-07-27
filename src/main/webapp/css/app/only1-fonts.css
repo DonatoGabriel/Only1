@@ -1,0 +1,11 @@
+/* -------------------- HASTERISCO -------------------- */
+@font-face {
+    font-family: only1;
+    src: url(../../fonts/HasteristicoBOLD.ttf);
+}
+
+/* -------------------- ROBOTO -------------------- */
+@font-face {
+    font-family: roboto;
+    src: url(../../fonts/Roboto-Regular.ttf);
+}

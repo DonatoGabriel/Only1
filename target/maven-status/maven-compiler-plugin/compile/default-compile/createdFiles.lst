@@ -1,0 +1,12 @@
+com\only1\controller\UsuarioController.class
+com\only1\domain\Contenido.class
+com\only1\controller\rest\UsuarioRestController.class
+com\only1\domain\TipoContenido.class
+com\only1\service\UsuarioService.class
+com\only1\ServletInitializer.class
+com\only1\domain\Comentario.class
+com\only1\ApplicationConfig.class
+com\only1\service\impl\UsuarioServiceImpl.class
+com\only1\domain\Usuario.class
+com\only1\exception\UsuarioDatosIncorrectosException.class
+com\only1\repository\UsuarioRepository.class

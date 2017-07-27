@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+}
+
+html, body{
+    height:100%;
+}
+
+body{
+    font-family: roboto;
+    background: #fafafa;
+}
+
+.nav{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /*background: #fafafa;*/
+}
+
+.container, .descarga p{
+    margin-bottom: 3%;
+}
+
+.nav, .logo{
+    height: 80px;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    font-family: only1;
+}
+
+nav, .logo, .slogan{ margin: auto; }
+
+.logo{
+    background-image: url("../../img/Logo-V1-CM.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    width: 130px;
+}
+
+.slogan, .cog{
+    float: right;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.slogan{
+    width: 20%;
+}
+
+.cog{
+    width: 3%;
+    text-align: center;
+}
+
+.cog:hover, .btn-p{
+    cursor: pointer;
+}
+
+.info, .form {
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.formContainer, .descarga{
+    width: 70%;
+    margin: auto;
+}
+
+.formContainer, ._usm{
+    margin-bottom: 3%;
+    border-color: #efefef !important;
+    background: #fff;
+}
+
+.formContainer{
+    padding: 5%;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+._usm{
+    padding: 1%;
+    border-bottom: 2px solid;
+    height: 170px;
+}
+
+._uimp{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.profilePicThumb{
+    box-shadow: none;
+    margin-top: 0;
+    display: block;
+    border: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.profilePicThumb .img {
+    display: block;
+}
+
+.profilePic {
+    height: 160px;
+    width: 160px;
+}
+
+._ugin {
+    float: left;
+    position: relative;
+    width: 60%;
+}
+
+._uimp{
+    margin-left: 20%;
+}
+
+._upi .username span{
+    font-size: 40px;
+}
+
+._upi .name{
+    margin-top: 1%;
+}
+
+.btn-p{
+    padding: 5px 15px 5px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 8px;
+    left: 215px;
+}
+
+.popupOverlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.popupOverlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 3%;
+    background: #fff;
+    border-radius: 3px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close{
+    position: absolute;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #222222;
+}
+
+.popup .menu{
+    list-style-type: none;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 20%;
+}
+  
+.popup .close:hover {
+    color: rgb(209, 82, 82);
+}
+  
+.popup .content {
+    max-height: 100%;
+    overflow: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+  
+ul {
+    list-style-type: none;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li:nth-child(2){
+    margin-left: 10%;
+}
+
+.menu li a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.menu li a.active {
+    background-color: #545251;
+    color: white;
+}
+
+._upi .name span{
+    font-weight: bold;
+}
+
+._uci{
+    margin-top: 4%;
+}
+
+._uci span{
+    display: inline-block;
+    margin-right: 5%;
+}
+
+a{
+    text-decoration:none;
+    color: #000;
+}
+
+.logo-t{
+    font-family: only1;
+}
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: auto;
+    width: 60%;
+    vertical-align: top;
+}
+
+.input__field {
+    position: relative;
+    display: block;
+    padding: 1em;
+    width: 100%;
+    border: 1px solid #efefef;
+    font-family: roboto;
+    border-radius: 0;
+    -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+    outline: none;
+}
+
+.input__label {
+    display: inline-block;
+    float: left;
+    color: #6a7989;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+
+.input__field--Only1:focus {
+	box-shadow: 0px 0px 0px 2px #eca29b;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 30%;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.separador{
+    width: 65%;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+.line{
+    background-color: #c7c7c7;
+    height: 1px;
+    position: relative;
+    width: 45%;
+    float: left;
+    top: 0.5em;
+}
+
+.circle{
+    text-transform: uppercase;
+    width: 10%;
+    float: left;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999;
+    font-weight: 600;
+}
+
+.descarga img{
+    width: 45%;
+    margin-left: 5%;
+    float: left;
+    position: relative;
+}
+
+.descarga{
+    height: 130px;
+}
+
+.alert{
+    padding: 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-danger{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+._ucnt{
+    width: 80%;
+    margin: auto;
+}
+
+.thumbnail{
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    float: left;
+    margin-left: 6%;
+    margin-bottom: 4%;
+}
+
+.thumbnail img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(34,34,34,0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.thumbnail:hover .overlay {
+  height: 100%;
+}
+
+.content-data {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#configInfo{
+    display: none;
+}
+
+input[type="submit"]:disabled{
+    background: #dddddd !important;
+    color: #000;
+    cursor: not-allowed
+}
